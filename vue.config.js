@@ -13,7 +13,7 @@ pagesArr.forEach(v => {
   }
 })
 module.exports = {
-  publicPath: '/',
+  publicPath: '/dist/', // 更改产出路径
   outputDir: 'dist',
   assetsDir: '', // 静态资源
   indexPath: 'index.html', // index.html

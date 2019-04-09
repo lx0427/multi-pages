@@ -1,8 +1,8 @@
 <template>
   <div class="nav">
-    <a :class="{active:currentPage===''}" href="/">首页</a> |
-    <a :class="{active:currentPage==='home'}" href="/home.html">HOME</a> |
-    <a :class="{active:currentPage==='about'}" href="/about">ABOUT</a>
+    <a :class="{'nav__link-active':currentPage===''}" href="/">首页</a> |
+    <a :class="{'nav__link-active':currentPage==='home'}" href="/home.html">HOME</a> |
+    <a :class="{'nav__link-active':currentPage==='about'}" href="/about">ABOUT</a>
   </div>
 </template>
 <script>
@@ -21,7 +21,11 @@ export default {
 </script>
 
 <style lang="scss">
-.active {
-  color: red;
+.nav {
+  &__link {
+    &-active {
+      color: red;
+    }
+  }
 }
 </style>
