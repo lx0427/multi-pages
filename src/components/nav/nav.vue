@@ -21,10 +21,12 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/common/reset.scss';
 .nav {
   &__link {
     &-active {
       color: red;
+      font-size: 28px;
     }
   }
 }
