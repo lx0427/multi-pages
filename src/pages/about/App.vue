@@ -2,6 +2,7 @@
   <div id="app">
     <nav-com></nav-com>
     <h1>this is about page !!!</h1>
+    <img src="./images/01.jpg" alt="">
   </div>
 </template>
 <script>
@@ -11,7 +12,6 @@ export default {
     return {}
   },
   components: {
-    // eslint-disable-next-line
     navCom
   }
 }

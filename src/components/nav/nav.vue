@@ -26,7 +26,7 @@ export default {
   &__link {
     &-active {
       color: red;
-      font-size: 28px;
+      font-size: 40px;
     }
   }
 }
