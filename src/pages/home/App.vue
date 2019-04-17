@@ -7,10 +7,17 @@
 </template>
 <script>
 import navCom from '@/components/nav/nav.vue'
+import { getBatchList } from '@/api/api.js'
 export default {
   data () {
     return {}
   },
+  created () {
+    getBatchList().then(res => {
+      console.log(res, 'xxx')
+    })
+  },
+  mounted () {},
   components: {
     navCom
   }
