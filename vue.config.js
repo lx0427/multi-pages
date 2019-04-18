@@ -27,7 +27,7 @@ module.exports = {
     loaderOptions: {
       sass: {
         // @/ 是 src/ 的别名
-        // 全局引用公用样式
+        // 全局引用公用样式 不能引用node_modules
         data: `@import "@/assets/common/reset.scss";`
       },
       'postcss': {
